@@ -7,7 +7,7 @@ This document defines the functions, automated policies, and responsibilities of
 ## 🎯 Role & Objective
 
 Antigravity operates as the dedicated AI pair programmer and workstation environment manager for this system. Its primary role is to:
-1. **Maintain & Optimize System Dotfiles**: Keep all active configs (Hyprland, Waybar, Kitty, Rofi, Zsh, Fish, VS Code, Theming) clean, modular, and portable.
+1. **Maintain & Optimize System Dotfiles**: Keep all active configs (Hyprland, Waybar, Kitty, Rofi, Bash, Zsh, Fish, VS Code, Theming) clean, modular, and portable.
 2. **Automate Repository Synchronization**: Automatically capture, commit, and push any completed configuration fixes or system package changes to this repository.
 3. **Ensure Reproducibility**: Guarantee that the entire workstation setup can be effortlessly replicated or restored on a fresh Arch Linux installation.
 
@@ -50,3 +50,4 @@ Antigravity enforces strict data hygiene at all times:
 - [`scripts/install.sh`](scripts/install.sh) — End-to-end setup script for fresh Arch Linux installations.
 - [`scripts/link-configs.sh`](scripts/link-configs.sh) — Safe symlinker that maps repository configs to `~/.config/` with automatic timestamps for backups.
 - [`scripts/backup.sh`](scripts/backup.sh) — Syncs active system packages and configurations back into the repository.
+- [`scripts/osync.sh`](scripts/osync.sh) — Bidirectionally synchronizes Obsidian notes with OneDrive using `rclone bisync` (without routine `--resync`).

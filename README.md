@@ -33,6 +33,7 @@ workstation/
 │   ├── README.md             # Assistant overview & documentation
 │   └── WORKFLOW.md           # Operational lifecycle & commit guide
 ├── configs/                  # Modular application configurations
+│   ├── bash/                 # Bash personal shell configuration & aliases
 │   ├── btop/                 # System resource monitor config
 │   ├── fastfetch/            # System information fetcher presets
 │   ├── fish/                 # Fish shell config & starship prompt
@@ -60,7 +61,8 @@ workstation/
 ├── scripts/                  # Management & automated setup scripts
 │   ├── backup.sh             # Sync current system configs back into repo
 │   ├── install.sh            # Automated bootstrap & setup for fresh Arch installs
-│   └── link-configs.sh       # Safe dotfile symlinker with auto-backups
+│   ├── link-configs.sh       # Safe dotfile symlinker with auto-backups
+│   └── osync.sh              # Obsidian notes bidirectional sync with OneDrive
 ├── .gitignore                # Excludes runtime caches, secrets, histories, and logs
 └── README.md                 # Documentation and user manual
 ```
@@ -74,7 +76,7 @@ workstation/
 To restore the complete setup on a clean Arch Linux machine:
 
 ```bash
-git clone https://github.com/saadxe8/workstation.git ~/workstation
+git clone https://github.com/nv8v/workstation.git ~/workstation
 cd ~/workstation
 chmod +x scripts/*.sh
 ./scripts/install.sh
@@ -83,7 +85,7 @@ chmod +x scripts/*.sh
 The installer will:
 1. Update system databases and install official packages from `packages/pacman.txt`.
 2. Ensure `yay` is available and install AUR packages from `packages/aur.txt`.
-3. Symlink configuration files into `~/.config/`, `~/.zsh`, `~/.zshrc`, `~/.gitconfig`, etc.
+3. Symlink configuration files into `~/.config/`, `~/.zsh`, `~/.zshrc`, `~/.gitconfig`, `~/.bashrc`, and CLI utilities (`osync`).
 4. Install all VS Code extensions from `packages/vscode-extensions.txt`.
 5. Enable essential background services (`NetworkManager`, `bluetooth`).
 
@@ -115,6 +117,23 @@ git diff
 
 ---
 
+### 4. Obsidian Vault Synchronization (`osync`)
+
+To bidirectionally synchronize Obsidian Markdown notes between `~/Documents/Notes` and OneDrive cloud storage:
+
+```bash
+osync
+```
+Or run the dedicated script directly:
+```bash
+./scripts/osync.sh
+```
+
+> [!IMPORTANT]
+> Standard bidirectional synchronization runs safely without `--resync`. Routine use of `--resync` is prohibited to prevent accidental overwrites or data loss.
+
+---
+
 ## ⌨️ Essential Hyprland Keybindings
 
 | Keybind | Action |
@@ -124,7 +143,7 @@ git diff
 | <kbd>SUPER</kbd> + <kbd>D</kbd> | Open Rofi Application Launcher |
 | <kbd>SUPER</kbd> + <kbd>E</kbd> | Open Nautilus File Manager |
 | <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Open Yazi Terminal File Manager |
-| <kbd>SUPER</kbd> + <kbd>B</kbd> | Launch LibreWolf Web Browser |
+| <kbd>SUPER</kbd> + <kbd>B</kbd> | Launch Web Browser (Firefox) |
 | <kbd>SUPER</kbd> + <kbd>C</kbd> | Launch Visual Studio Code |
 | <kbd>SUPER</kbd> + <kbd>V</kbd> | Toggle Floating Window |
 | <kbd>SUPER</kbd> + <kbd>F</kbd> | Toggle Fullscreen |

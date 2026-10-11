@@ -38,7 +38,7 @@
 ## ⚡ Core Functions & Responsibilities
 
 ### 1. Configuration Maintenance
-- Keeps configurations for **Hyprland**, **Waybar**, **Kitty**, **Rofi**, **SwayNC**, **Zsh**, **Fish**, **VS Code**, and **Theming** modular, clean, and portable.
+- Keeps configurations for **Hyprland**, **Waybar**, **Kitty**, **Rofi**, **SwayNC**, **Bash**, **Zsh**, **Fish**, **VS Code**, and **Theming** modular, clean, and portable.
 - Ensures all paths use relative references or `$HOME` variables to guarantee reproducibility across fresh installs.
 
 ### 2. Automated Granular Synchronization
@@ -67,4 +67,4 @@
 > Whenever any task or fix modifies your configuration or installed packages, AGY automatically stages the changes, verifies cleanliness via `git diff`, commits with `AGY: <description>`, and pushes immediately to GitHub.
 
 > [!NOTE]
-> Helper automation scripts are available under [`scripts/`](../scripts/) for deployment (`link-configs.sh`), full system install (`install.sh`), and repository synchronization (`backup.sh`).
+> Helper automation scripts are available under [`scripts/`](../scripts/) for deployment (`link-configs.sh`), full system install (`install.sh`), repository synchronization (`backup.sh`), and Obsidian vault bidirectional sync (`osync.sh`).

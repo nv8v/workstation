@@ -36,10 +36,10 @@ Detailed step-by-step lifecycle for system modifications, configuration maintena
 |---|---|---|
 | Window Manager | `configs/hypr/**` | `AGY: Update Hyprland window rules and keybindings` |
 | Status Bar | `configs/waybar/**` | `AGY: Adjust Waybar module spacing and layout` |
-| Terminal & Shell | `configs/kitty/**`, `configs/zsh/**`, `configs/fish/**` | `AGY: Update Zsh aliases and starship prompt config` |
+| Terminal & Shell | `configs/kitty/**`, `configs/bash/**`, `configs/zsh/**`, `configs/fish/**` | `AGY: Update shell aliases and starship prompt config` |
 | Application Styling | `configs/gtk*/**`, `configs/qt*/**`, `configs/rofi/**` | `AGY: Refine Rofi theme and GTK dark mode settings` |
-| System Packages | `packages/pacman.txt`, `packages/aur.txt` | `AGY: Update pacman and aur package inventories` |
-| Automations | `scripts/**` | `AGY: Enhance link-configs backup mechanism` |
+| System Packages | `packages/pacman.txt`, `packages/aur.txt`, `packages/APPS.md` | `AGY: Update pacman and aur package inventories` |
+| Automations | `scripts/**` | `AGY: Add Obsidian osync script and update link-configs` |
 | Documentation | `README.md`, `AGY/**` | `AGY: Update documentation and keybindings guide` |
 
 ---
