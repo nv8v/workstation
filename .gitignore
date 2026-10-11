@@ -37,6 +37,8 @@ id_ed25519*
 *.kdbx
 credentials
 credentials.json
+rclone.conf
+*.token
 .env
 .env.*
 *.secret
