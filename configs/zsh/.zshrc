@@ -219,5 +219,4 @@ export PATH="$HOME/.local/bin:$PATH"
 EOF
         echo -e "\033[0m"
     fi
-}
 

@@ -104,6 +104,9 @@ alias style='.zsh/change_style.zsh'
 ## permissions ##
 alias exe='chmod +x'
 
+## obsidian sync ##
+alias osync='rclone bisync ~/Documents/Notes OneDrive:Obsidian'
+
 # Alias to launch a document, file, or URL in it's default X application
 if command -v xdg-open >/dev/null 2>&1; then
 	alias open='runfree xdg-open'
