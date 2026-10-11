@@ -2,6 +2,7 @@ crudini
 grimblast-git
 localsend-bin
 pyprland
+python-pywal
 qt6ct-kde
 tty-clock
 visual-studio-code-bin

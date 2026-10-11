@@ -6,10 +6,12 @@ bluez
 bluez-utils
 btop
 cliphist
+codeblocks
 ddcutil
 decibels
 dmidecode
 epiphany
+firefox
 gdm
 git
 gnome-backgrounds
@@ -68,7 +70,6 @@ kvantum
 kvantum-qt5
 less
 libpulse
-librewolf
 libva-intel-driver
 linux
 linux-firmware
@@ -105,7 +106,6 @@ pipewire-jack
 pipewire-pulse
 polkit-kde-agent
 power-profiles-daemon
-python-pywal
 qt5ct
 qt5-graphicaleffects
 qt5-quickcontrols2
@@ -127,6 +127,7 @@ sushi
 swaync
 tecla
 thefuck
+tk
 tree
 ttf-cascadia-code-nerd
 ttf-dejavu

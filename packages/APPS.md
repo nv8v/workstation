@@ -7,6 +7,7 @@ Applications I use regularly, grouped by their role in my workflow.
 | Application | Package | Purpose |
 |---|---|---|
 | Visual Studio Code | `visual-studio-code-bin` | Main IDE for university and programming |
+| Code::Blocks | `codeblocks` | C/C++ integrated development environment |
 | Neovim | `neovim` | Terminal-based editor |
 | Git | `git` | Version control |
 | CMake | `cmake` | C/C++ build system |
@@ -22,8 +23,8 @@ Applications I use regularly, grouped by their role in my workflow.
 
 | Application | Package | Purpose |
 |---|---|---|
-| Obsidian | `obsidian` | Notes, course organization and knowledge management |
-| LibreWolf | `librewolf` | Web browsing, research and privacy |
+| Obsidian | `obsidian` | Notes, course organization, knowledge management (synced via `osync`) |
+| Firefox | `firefox` | Primary web browser, research, and general browsing |
 | Evince | `evince` | PDF/document reading |
 | Papers | `papers` | PDF/document reading |
 | GNOME Calculator | `gnome-calculator` | Calculations |
@@ -35,6 +36,7 @@ Applications I use regularly, grouped by their role in my workflow.
 |---|---|---|
 | Yazi | `yazi` | Terminal file manager |
 | Nautilus | `nautilus` | Graphical file manager |
+| Rclone | `rclone` | Cloud storage synchronization & Obsidian vault bisync (`osync`) |
 | GNOME Disk Utility | `gnome-disk-utility` | Disk and partition management |
 | Baobab | `baobab` | Disk usage analysis |
 
