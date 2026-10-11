@@ -40,4 +40,10 @@ if [[ -f "${HOME}/.config/Code/User/settings.json" ]]; then
     success "Updated VS Code settings.json"
 fi
 
+if [[ -f "${HOME}/.bashrc" ]]; then
+    mkdir -p "${CONFIGS_DIR}/bash"
+    cp "${HOME}/.bashrc" "${CONFIGS_DIR}/bash/.bashrc"
+    success "Updated Bash .bashrc"
+fi
+
 success "Workstation backup synchronization complete!"

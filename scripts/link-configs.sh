@@ -109,6 +109,17 @@ main() {
         link_item "${CONFIGS_DIR}/vscode/settings.json" "${HOME}/.config/Code/User/settings.json"
     fi
 
+    # Bash configuration
+    if [[ -f "${CONFIGS_DIR}/bash/.bashrc" ]]; then
+        link_item "${CONFIGS_DIR}/bash/.bashrc" "${HOME}/.bashrc"
+    fi
+
+    # Helper scripts and CLI utilities
+    if [[ -f "${REPO_DIR}/scripts/osync.sh" ]]; then
+        mkdir -p "${HOME}/.local/bin"
+        link_item "${REPO_DIR}/scripts/osync.sh" "${HOME}/.local/bin/osync"
+    fi
+
     echo -e "\n${GREEN}All configurations linked successfully!${NC}"
     if [[ -d "$BACKUP_DIR" ]]; then
         echo -e "${YELLOW}Backups stored in: ${BACKUP_DIR}${NC}"
